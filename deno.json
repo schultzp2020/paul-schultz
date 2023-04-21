@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "start": "deno run -A --watch=static/,routes/ dev.ts"
+    "start": "deno run -A --watch=static/,routes/ dev.ts & deno task css --watch",
+    "css": "./tailwindcss.exe -i ./styles/tailwind.css -o ./static/main.css"
   },
   "importMap": "./import_map.json",
   "compilerOptions": {

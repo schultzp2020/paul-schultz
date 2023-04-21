@@ -1,10 +1,10 @@
-# fresh project
+# paul-schultz
 
-### Usage
+## Usage
 
 Start the project:
 
-```
+```console
 deno task start
 ```
 
