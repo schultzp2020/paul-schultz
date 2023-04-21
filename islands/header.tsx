@@ -7,6 +7,7 @@ import {
   MobileNavigation,
   ModeToggle,
 } from "components";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 function clamp(number: number, a: number, b: number) {
   const min = Math.min(a, b);
@@ -15,7 +16,7 @@ function clamp(number: number, a: number, b: number) {
 }
 
 export default function Header() {
-  const isHomePage = location?.pathname === "/";
+  const isHomePage = IS_BROWSER && location?.pathname === "/";
 
   const headerRef = useRef<HTMLDivElement>(null);
   const avatarRef = useRef<HTMLDivElement>(null);

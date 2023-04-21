@@ -1,10 +1,11 @@
 import { ComponentChild, ComponentProps } from "preact";
 import { clsx } from "clsx";
+import { IS_BROWSER } from "$fresh/runtime.ts";
 
 export function DesktopNavItem(
   { href, children }: { href: string; children: ComponentChild },
 ) {
-  const isActive = location?.pathname === href;
+  const isActive = IS_BROWSER && location?.pathname === href;
 
   return (
     <li>
