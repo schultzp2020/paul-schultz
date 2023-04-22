@@ -4,6 +4,7 @@ import {
   ChevronDownIcon,
   XMarkIcon as CloseIcon,
 } from "@heroicons/react/24/outline";
+import { pages } from "config";
 
 export function MobileNavItem(
   { href, children }: { href: string; children: ComponentChild },
@@ -59,11 +60,9 @@ export function MobileNavigation(props: { className?: string }) {
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                {pages.map(({ href, title }) => (
+                  <MobileNavItem href={href}>{title}</MobileNavItem>
+                ))}
               </ul>
             </nav>
           </Popover.Panel>

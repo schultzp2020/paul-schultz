@@ -1,6 +1,7 @@
 {
   "imports": {
     "components": "./components/mod.tsx",
+    "config": "./config/mod.ts",
     "islands/": "./islands/",
     "$fresh/": "https://deno.land/x/fresh@1.1.5/",
     "preact": "https://esm.sh/preact@10.13.1",
@@ -8,9 +9,9 @@
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.6",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.2.3",
-    "@headlessui/react": "https://esm.sh/@headlessui/react@1.7.14?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&external=preact",
-    "@heroicons/react/24/outline": "https://esm.sh/@heroicons/react@2.0.17/24/outline?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&external=preact",
-    "@heroicons/react/20/solid": "https://esm.sh/@heroicons/react@2.0.17/20/solid?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&external=preact",
+    "@headlessui/react": "https://esm.sh/@headlessui/react@1.7.14?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&deps=preact@10.13.1",
+    "@heroicons/react/24/outline": "https://esm.sh/@heroicons/react@2.0.17/24/outline?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&deps=preact@10.13.1",
+    "@heroicons/react/20/solid": "https://esm.sh/@heroicons/react@2.0.17/20/solid?alias=react:preact/compat,react-dom:preact/compat,@types/react:preact/compat&deps=preact@10.13.1",
     "clsx": "https://esm.sh/clsx@1.2.1"
   }
 }
